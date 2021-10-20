@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+}
+
+@import './styles/variables';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+// ::-webkit-scrollbar {
+//   width: 6px;
+//   height: 1px;
+//   background-color: #f5f6fb;
+
+//   @media screen and (max-width: 767px) {
+//     width: 0px;
+//   }
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: #ff751d;
+//   border-radius: 9em;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background-color: #ebbb9d;
+// }

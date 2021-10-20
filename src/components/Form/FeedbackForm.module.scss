@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.form {
+  border: 1px solid tomato;
+  margin-top: 179px;
+  padding: 0 3px 0 3px;
+  width: 563px;
+  height: 575px;
+}
+
+.titleForm {
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: $primery-font;
+  line-height: 52px;
+}
+
+.label {
+  display: block;
+  width: 100%;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 31px 46px 30px 46px;
+  border: 1px solid $cl-border;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 400;
+    color: $plch-font;
+  }
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 23px;
+  padding: 31px 46px 30px 46px;
+  border: 1px solid $cl-border;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 400;
+    color: $plch-font;
+  }
+}

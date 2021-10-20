@@ -1,0 +1,15 @@
+.Container {
+  // max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 150px;
+  padding-left: 150px;
+  border: 1px solid green;
+  background-image: url('../../images/goodie1.svg'),
+    url('../../images/red_cartoon\ 3.svg'), url('../../images/Map.svg');
+  background-repeat: no-repeat;
+  background-size: 127px 127px, 214px 208px, contain;
+  background-position: right 10px bottom 285px, right 10px bottom 72.11px,
+    right 10px bottom 0;
+  // background-attachment: fixed;
+}

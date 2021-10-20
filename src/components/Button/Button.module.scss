@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.button {
+  display: inline-block;
+  min-width: 218px;
+  height: 73px;
+  border: 0;
+  border-radius: 500px;
+  background-color: $yellow-btn;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $white-btn;
+  transition: background-color 300ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $white-btn;
+    border: 2px solid $yellow-btn;
+    color: $yellow-btn;
+  }
+}
