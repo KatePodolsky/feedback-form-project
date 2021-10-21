@@ -1,7 +1,34 @@
 @import '../../styles/variables';
+@import '../../styles/size';
 
 .footer {
+  position: relative;
   height: 200px;
   background-color: $bg-footer;
   border: 1px solid $brd-footer;
+  background-image: url('../../images/Group80.svg'),
+    url('../../images/red_cartoon4.1.svg'), url('../../images/red_cartoon6.svg');
+  background-repeat: no-repeat;
+  background-size: 78.46px 97px, 66px 85.84px, 214px 180px;
+  background-position: right 27.54px top 0, right 0 bottom 15px, left 0 bottom 0;
+
+  @include size(desktop) {
+    background-position: right 127.54px top 0, right 0 bottom 45px,
+      left 0 bottom 0;
+  }
+}
+
+.social__list {
+  position: absolute;
+  top: 29px;
+  left: 43px;
+  display: flex;
+  justify-content: space-between;
+  width: 126.76px;
+  height: 16.09px;
+
+  @include size(tablet) {
+    top: 79px;
+    left: 343px;
+  }
 }

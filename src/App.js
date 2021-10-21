@@ -7,11 +7,14 @@ import BG from './components/BG/BG';
 function App() {
   return (
     <>
+    <BG>
       <Container>
         <Form />
       </Container>
+   
+    </BG>
       <Footer />
-    </>
+      </>
   );
 }
 

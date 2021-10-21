@@ -1,18 +1,29 @@
 @import '../../styles/variables';
+@import '../../styles/size';
 
 .form {
   border: 1px solid tomato;
-  margin-top: 179px;
+  margin: 179px 0 14px 0;
   padding: 0 3px 0 3px;
-  width: 563px;
-  height: 575px;
+  width: 263px;
+
+  @include size(tablet) {
+    width: 563px;
+    margin: 179px 0 174px 0;
+  }
 }
 
 .titleForm {
-  margin-bottom: 30px;
-  font-size: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
   color: $primery-font;
-  line-height: 52px;
+  line-height: 26px;
+
+  @include size(tablet) {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 52px;
+  }
 }
 
 .label {

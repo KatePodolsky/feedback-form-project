@@ -1,4 +1,33 @@
-.Bg {
-  border-radius: 50%;
-  background-color: aqua;
+@import '../../styles/size';
+
+.BG {
+  background-image: url('../../images/red_cartoon4.svg'),
+    url('../../images/ellipse31.svg'), url('../../images/goodie1.svg'),
+    url('../../images/red_cartoon3.svg'), url('../../images/Map.svg'),
+    url('../../images/clouds/cloud1.svg'), url('../../images/clouds/cloud2.svg'),
+    url('../../images/clouds/cloud3.svg'), url('../../images/clouds/cloud4.svg'),
+    url('../../images/clouds/cloud5.svg'), url('../../images/clouds/cloud6.svg'),
+    url('../../images/clouds/cloud7.svg'), url('../../images/clouds/cloud8.svg'),
+    url('../../images/clouds/cloud9.svg'),
+    url('../../images/clouds/cloud10.svg');
+  background-repeat: no-repeat;
+  background-size: 88.32px 85.84px, 87px 87px, 127px 127px, 214px 208px, contain,
+    207.79px 157.52px, 169.8px 128.47px, 131.82px 99.42px, 288.22px 216.72px,
+    218.96px 164.22px, 218.96px 164.22px, 218.96px 164.22px, 172.04px 129.59px,
+    245.63px 184.32px, 138.45px 103.88px;
+  background-position: left 29px top 23px, left 714px top 21px,
+    right 0px bottom 250px, right 0px bottom 116px, right 0 top 0,
+    left 1169px bottom 285.48px, left 731px bottom 53.53px,
+    left 101px bottom 139.58px, left 141px bottom -50px, left 775px top 101px,
+    left 343px bottom 137.78px, left -92px top 400px, left 693px top 256px,
+    left -69px top 185.89px, left 616.92px top 131.15px;
+
+  @include size(desktop) {
+    background-position: left 29px top 23px, left 714px top 21px,
+      right 500px bottom 250px, right 370px bottom 116px, right 0 top 0,
+      left 1169px bottom 285.48px, left 731px bottom 53.53px,
+      left 101px bottom 139.58px, left 141px bottom -50px, left 775px top 101px,
+      left 343px bottom 137.78px, left -92px top 400px, left 693px top 256px,
+      left -69px top 185.89px, left 616.92px top 131.15px;
+  }
 }
