@@ -2,20 +2,17 @@
 @import '../../styles/size';
 
 .form {
-  border: 1px solid tomato;
-  margin: 179px 0 14px 0;
-  padding: 0 3px 0 3px;
+  padding: 0 5px 0 5px;
   width: 263px;
 
   @include size(tablet) {
     width: 563px;
-    margin: 179px 0 174px 0;
   }
 }
 
 .titleForm {
-  margin-bottom: 10px;
-  font-size: 20px;
+  margin-bottom: 15px;
+  font-size: 25px;
   color: $primery-font;
   line-height: 26px;
 
@@ -35,15 +32,25 @@
   display: block;
   width: 100%;
   margin-bottom: 8px;
-  padding: 31px 46px 30px 46px;
+  padding: 11px 26px 10px 26px;
   border: 1px solid $cl-border;
   border-radius: 10px;
 
   &::placeholder {
-    font-size: 18px;
-    line-height: 32.4px;
-    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 300;
     color: $plch-font;
+
+    @include size(tablet) {
+      font-size: 18px;
+      line-height: 32.4px;
+      font-weight: 400;
+    }
+  }
+
+  @include size(tablet) {
+    padding: 31px 46px 30px 46px;
   }
 }
 
@@ -51,14 +58,24 @@
   display: block;
   width: 100%;
   margin-bottom: 23px;
-  padding: 31px 46px 30px 46px;
+  padding: 11px 26px 10px 26px;
   border: 1px solid $cl-border;
   border-radius: 10px;
 
   &::placeholder {
-    font-size: 18px;
-    line-height: 32.4px;
-    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 300;
     color: $plch-font;
+
+    @include size(tablet) {
+      font-size: 18px;
+      line-height: 32.4px;
+      font-weight: 400;
+    }
+  }
+
+  @include size(tablet) {
+    padding: 31px 46px 30px 46px;
   }
 }

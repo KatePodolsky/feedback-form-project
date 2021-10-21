@@ -1,48 +1,40 @@
 import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { GoogleLogin } from 'react-google-login';
-// import GoogleButton from 'react-google-button'
-// import { authOperations } from "../../redux/auth";
-// import axios from 'axios';
+import { useDispatch } from "react-redux";
+import { feedbackOps } from "../../redux/feedback";
 import Button from "../Button";
 import styles from "./FeedbackForm.module.scss";
-// import authActions from "../../redux/auth/authActions";
 
 const FeedbackForm = () => {
-//   const dispatch = useDispatch();
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [required, setRequired] = useState(false);
+  const dispatch = useDispatch();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-//   const onLogIn = () => dispatch(authOperations.logIn({ email, password }));
+  const submitFeedback = () => dispatch(feedbackOps.feedback({ name, email, message }));
 
-//   const handleChange = ({ target: { name, value } }) => {
-//     switch (name) {
-//       case "email":
-//         return setEmail(value);
-//       case "password":
-//         return setPassword(value);
-//       default:
-//         return;
-//     }
-//   };
+  const handleChange = ({ target: { name, value } }) => {
+    switch (name) {
+      case "name":
+        return setName(value);
+      case "email":
+        return setEmail(value);
+      case "message":
+        return setMessage(value);
+      default:
+        return;
+    }
+  };
 
-//   const reset = () => {
-//     setEmail("");
-//     setPassword("");
-//   };
+  const reset = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // if (email === "" || password === "") {
-    //   setRequired(true);
-    //   return;
-    // } else {
-    //   setRequired(false);
-    // }
-    // onLogIn();
-    // reset();
+    submitFeedback();
+    reset();
   };
 
   return (
@@ -55,9 +47,9 @@ const FeedbackForm = () => {
             className={styles.input}
             type="text"
             name="name"
-            // value={name}
+            value={name}
             placeholder="Your name*"
-            onChange={'handleChange'}
+            onChange={handleChange}
           />
         </label>
         <label className={styles.label}>  
@@ -65,18 +57,18 @@ const FeedbackForm = () => {
             className={styles.input}
             type="email"
             name="email"
-            // value={email}
+            value={email}
             placeholder="Your e-mail*"
-            onChange={'handleChange'}
+            onChange={handleChange}
           />
         </label>
       <textarea
         className={styles.textarea}
         rows="5"
         name="message"
-        // value={message}
+        value={message}
         placeholder="Your message*"
-        onChange={'handleChange'}>
+        onChange={handleChange}>
         </textarea>
       <div className={styles.button__container}>
           <Button type="submit" buttonText="Send message" />

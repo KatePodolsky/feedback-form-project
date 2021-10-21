@@ -11,7 +11,6 @@ function App() {
       <Container>
         <Form />
       </Container>
-   
     </BG>
       <Footer />
       </>

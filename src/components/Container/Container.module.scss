@@ -6,15 +6,13 @@
   margin-left: auto;
   padding-right: 5px;
   padding-left: 5px;
-  border: 1px solid green;
+  padding: 11px 5px 7px 5px;
 
   @include size(tablet) {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 19px 29px 14px 29px;
   }
 
   @include size(desktop) {
-    padding-right: 150px;
-    padding-left: 150px;
+    padding: 179px 150px 174px 150px;
   }
 }
