@@ -16,4 +16,6 @@ const feedback = (credentials) => async (dispatch) => {
   }
 };
 
-export default feedback;
+export default {
+  feedback
+};

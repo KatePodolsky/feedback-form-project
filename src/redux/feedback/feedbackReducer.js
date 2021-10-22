@@ -2,10 +2,8 @@ import { combineReducers } from "redux";
 import { createReducer } from "@reduxjs/toolkit";
 import feedbackActions from './feedbackActions';
 
-const initialUserState = { email: null };
-
-const user = createReducer(initialUserState, {
-    [feedbackActions.feedbackSuccess]: (_, { payload }) => payload.user,
+const user = createReducer([], {
+    [feedbackActions.feedbackSuccess]: (state, action) => [action.payload, ...state],
 });
 
 const setError = (_, { payload }) => payload;

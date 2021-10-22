@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { feedbackOps } from "../../redux/feedback";
+import { feedbackOperations } from "../../redux/feedback";
 import Button from "../Button";
 import styles from "./FeedbackForm.module.scss";
 
@@ -10,7 +10,7 @@ const FeedbackForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const submitFeedback = () => dispatch(feedbackOps.feedback({ name, email, message }));
+  const submitFeedback = () => dispatch(feedbackOperations.feedback({ name, email, message }));
 
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
