@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/feedback-form-project/static/css/main.f46b7dfc.chunk.css",
+    "main.js": "/feedback-form-project/static/js/main.8bfa7187.chunk.js",
+    "main.js.map": "/feedback-form-project/static/js/main.8bfa7187.chunk.js.map",
+    "runtime-main.js": "/feedback-form-project/static/js/runtime-main.4fe3afbd.js",
+    "runtime-main.js.map": "/feedback-form-project/static/js/runtime-main.4fe3afbd.js.map",
+    "static/css/2.48994514.chunk.css": "/feedback-form-project/static/css/2.48994514.chunk.css",
+    "static/js/2.b09559f7.chunk.js": "/feedback-form-project/static/js/2.b09559f7.chunk.js",
+    "static/js/2.b09559f7.chunk.js.map": "/feedback-form-project/static/js/2.b09559f7.chunk.js.map",
+    "index.html": "/feedback-form-project/index.html",
+    "static/css/2.48994514.chunk.css.map": "/feedback-form-project/static/css/2.48994514.chunk.css.map",
+    "static/css/main.f46b7dfc.chunk.css.map": "/feedback-form-project/static/css/main.f46b7dfc.chunk.css.map",
+    "static/js/2.b09559f7.chunk.js.LICENSE.txt": "/feedback-form-project/static/js/2.b09559f7.chunk.js.LICENSE.txt",
+    "static/media/Footer.module.scss": "/feedback-form-project/static/media/red_cartoon6.670ea739.svg",
+    "static/media/BG.module.scss": "/feedback-form-project/static/media/red_cartoon4.4a41952c.svg",
+    "static/media/facebook.3c739c49.svg": "/feedback-form-project/static/media/facebook.3c739c49.svg",
+    "static/media/instagram.02d395f6.svg": "/feedback-form-project/static/media/instagram.02d395f6.svg",
+    "static/media/pinterest.f389d69a.svg": "/feedback-form-project/static/media/pinterest.f389d69a.svg",
+    "static/media/twitter.ba460615.svg": "/feedback-form-project/static/media/twitter.ba460615.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fe3afbd.js",
+    "static/css/2.48994514.chunk.css",
+    "static/js/2.b09559f7.chunk.js",
+    "static/css/main.f46b7dfc.chunk.css",
+    "static/js/main.8bfa7187.chunk.js"
+  ]
+}
