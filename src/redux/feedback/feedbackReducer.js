@@ -3,7 +3,7 @@ import { createReducer } from "@reduxjs/toolkit";
 import feedbackActions from './feedbackActions';
 
 const user = createReducer([], {
-    [feedbackActions.feedbackSuccess]: (state, action) => [action.payload, ...state],
+    [feedbackActions.feedbackSuccess]: (_, { payload }) => payload.user,
 });
 
 const setError = (_, { payload }) => payload;
