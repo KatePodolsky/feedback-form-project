@@ -2,6 +2,7 @@
   "name": "feedback-form-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://KatePodolsky.github.io/feedback-form-project",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.14.1",
