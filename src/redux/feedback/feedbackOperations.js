@@ -2,7 +2,7 @@ import axios from "axios";
 import feedbackActions from "./feedbackActions";
 import { pnotifyMessage } from '../../components/Pnotify/Pnotify';
 
-axios.defaults.baseURL = "http://localhost:4000/api";
+axios.defaults.baseURL = "https://aqueous-refuge-13466.herokuapp.com/api";
 
 
 const feedback = (credentials) => async (dispatch) => {
